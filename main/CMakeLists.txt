@@ -1,9 +1,12 @@
-idf_component_register(SRCS "ESP32X_Demo.c"
+idf_component_register(SRCS "ESP32SX.c"
 
                             "../hal/src/uart.c"
-                            "../hal/src/oled.c"
+                            "../hal/src/iic.c"
+
+                            "../app/src/oled.c"
 
                     INCLUDE_DIRS "."
                                  "../hal/inc"
+                                 "../app/inc"
                     
                     )
