@@ -2,6 +2,7 @@
 将常见传感器移植到ESP32S系列芯片上，主要采用C语言编写驱动库
 
 ## 使用核心板如下
+![image](https://github.com/BG6TPX/Pico-ESP32/blob/master/img_readme/ESP32S3.png)
 
 ## 项目目录结构
 ``` 
