@@ -2,10 +2,10 @@
 
  const int RX_BUF_SIZE = 1024;
 
-#define TXD_PIN (GPIO_NUM_0)
-#define RXD_PIN (GPIO_NUM_1)
+#define TXD_PIN (GPIO_NUM_1)
+#define RXD_PIN (GPIO_NUM_2)
 
-void uart_init(void) {
+void uart_init(void) {  
     const uart_config_t uart_config = {
         .baud_rate = 115200,
         .data_bits = UART_DATA_8_BITS,
@@ -33,7 +33,7 @@ void tx_task(void *arg)
     static const char *TX_TASK_TAG = "TX_TASK";
     esp_log_level_set(TX_TASK_TAG, ESP_LOG_INFO);
     while (1) {
-        sendData(TX_TASK_TAG, "Hello world");
+        sendData(TX_TASK_TAG, "I LOVE ESP32 and STM32\n");
         vTaskDelay(2000 / portTICK_PERIOD_MS);
     }
 }
