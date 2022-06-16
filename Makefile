@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := ESP32X_Demo
+PROJECT_NAME := Pico-ESP32
 
 include $(IDF_PATH)/make/project.mk
